@@ -36,8 +36,6 @@ jobs:
       - name: Configure environment variables
         run: |
           echo "DB_URL=jdbc:postgresql://localhost:5432/${{ secrets.DB_NAME }}?user=${{ secrets.DB_USER }}&password=${{ secrets.DB_PASSWORD }}" >> $GITHUB_ENV
-          echo "DB_USERNAME=${{ secrets.DB_USER }}" >> $GITHUB_ENV
-          echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> $GITHUB_ENV
 
       - name: Build and test with Maven
         run: mvn clean test
