@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy the project files into the container
 COPY . .
 
-# Build the application inside the container
-RUN ./mvnw clean package -DskipTests
+# Grant execution permissions to the Maven wrapper
+RUN chmod +x mvnw && ./mvnw clean package -DskipTests
 
 # Create a new, smaller image to run the application
 FROM eclipse-temurin:17-jre AS runtime
