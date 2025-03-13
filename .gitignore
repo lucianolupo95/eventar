@@ -12,9 +12,6 @@ target/
 .DS_Store
 Thumbs.db
 
-# Ignore Maven wrapper (optional, but typically kept for portability)
-.mvn/
-
 # Ignore dependencies in Maven
 **/target/
 
