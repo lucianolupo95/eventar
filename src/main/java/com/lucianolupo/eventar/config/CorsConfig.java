@@ -1,4 +1,4 @@
-package com.yourpackage.config; // Change this to your actual package
+package com.lucianolupo.eventar.config; // Change this to your actual package
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
